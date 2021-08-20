@@ -139,7 +139,7 @@
                                 <td>{{$prop->unit_usaha}}</td>
                                 <td>{{$prop->sektor_usaha}}</td>
                                 <td>{{$prop->npwp}}</td>
-                                <td>
+                                <!-- <td>
                                     <a href="
                                     <?php $path = Storage::disk('dropbox')->url($prop->laporan_keuangan);
                                         echo url($path);
@@ -168,7 +168,7 @@
                                     <i class="fa fa-download"></i>&nbsp;
                                         Unduh
                                     </a>
-                                </td>
+                                </td> -->
                                 <td>
                                     @if ($prop->status == 0)
                                         <button type="button" class="btn btn-success btn-sm"
