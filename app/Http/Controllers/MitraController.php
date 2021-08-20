@@ -31,11 +31,11 @@ use Ixudra\Curl\Facades\Curl;
 
 class MitraController extends Controller
 {
-    // public function __construct()
-    // {
-    // 	//Penyiapkan Client Disk Dropbox
-    //     $this->dropbox = Storage::disk('dropbox')->getDriver()->getAdapter()->getClient();
-    // }
+    public function __construct()
+    {
+    	//Penyiapkan Client Disk Dropbox
+        $this->dropbox = Storage::disk('dropbox')->getDriver()->getAdapter()->getClient();
+    }
 
     public function loginIndex(){
         if(!Session::get('loginMitra')){
