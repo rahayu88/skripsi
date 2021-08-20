@@ -19,7 +19,7 @@ class DataProposalController extends Controller
         }else{
             $proposal = DataProposal::orderBy('status', 'asc')->get();
             $no = 0;
-            return view('admin/kelolaProposal', compact('proposal', 'no'));
+            return view('admin.kelolaProposal', compact('proposal', 'no'));
         }
     }
 
